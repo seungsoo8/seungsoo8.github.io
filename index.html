@@ -3,24 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>데일리 웰</title>
+<title>앱 개발자 홈</title>
 <style>
   :root { color-scheme: light dark; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
          line-height: 1.7; max-width: 680px; margin: 0 auto; padding: 48px 20px; color: #1a1a1a; background: #fff; }
-  @media (prefers-color-scheme: dark) { body { background: #0c141b; color: #eff6fb; } a { color: #38bdf8; } }
-  h1 { font-size: 1.8rem; }
+  @media (prefers-color-scheme: dark) { body { background: #0c141b; color: #eff6fb; } a { color: #38bdf8; } .card { border-color:#24384a; } }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .muted { color: #888; margin-bottom: 28px; }
+  .card { display: block; border: 1px solid #e5e5e5; border-radius: 14px; padding: 16px 18px; margin-bottom: 14px; text-decoration: none; color: inherit; }
+  .card h2 { font-size: 1.1rem; margin: 0 0 4px; }
+  .card p { margin: 0; color: #888; font-size: .92rem; }
+  .links { font-size: .9rem; margin-top: 10px; }
   a { color: #2563eb; }
-  ul { padding-left: 20px; }
+  footer { margin-top: 40px; font-size: .9rem; color: #888; }
 </style>
 </head>
 <body>
-  <h1>데일리 웰</h1>
-  <p>물 마시기와 금연·금주 습관을 한 곳에서 관리하는 무료 앱입니다.</p>
-  <ul>
-    <li><a href="https://seungsoo8.github.io/dailycare-legal/">개인정보 처리방침</a></li>
-    <li><a href="https://seungsoo8.github.io/dailycare-legal/terms.html">이용약관</a></li>
-  </ul>
-  <p>문의: <a href="mailto:dltmdtn608@gmail.com">dltmdtn608@gmail.com</a></p>
+  <h1>앱 개발자 홈</h1>
+  <p class="muted">건강·습관을 돕는 모바일 앱을 만듭니다.</p>
+
+  <div class="card">
+    <h2>데일리 웰</h2>
+    <p>물 마시기와 금연·금주 습관을 한 곳에서 관리하는 무료 앱.</p>
+    <div class="links">
+      <a href="https://seungsoo8.github.io/dailycare-legal/">개인정보 처리방침</a> ·
+      <a href="https://seungsoo8.github.io/dailycare-legal/terms.html">이용약관</a>
+    </div>
+  </div>
+
+  <!-- 추가 앱은 여기에 카드로 더합니다. -->
+
+  <footer>
+    문의: <a href="mailto:dltmdtn608@gmail.com">dltmdtn608@gmail.com</a>
+  </footer>
 </body>
 </html>
